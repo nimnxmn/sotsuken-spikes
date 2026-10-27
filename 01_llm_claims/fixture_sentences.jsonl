@@ -1,0 +1,5 @@
+{"sentence": "Net sales increased 6% or $22.0 billion during 2025 compared to 2024.", "rule_label": "DATED_FACT"}
+{"sentence": "Gross margin is calculated as net sales less cost of sales.", "rule_label": "DEFINITION"}
+{"sentence": "We expect gross margin to be between 46% and 47% in the next quarter.", "rule_label": "FORECAST_OPINION"}
+{"sentence": "If foreign currency exchange rates change, our results could be adversely affected.", "rule_label": "CONDITIONAL_RISK"}
+{"sentence": "The Company believes its existing cash will be sufficient to satisfy its needs.", "rule_label": "FORECAST_OPINION"}

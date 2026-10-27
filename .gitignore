@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+
+# not part of what is shared with the advisor
+03_amm_lp/
+README_ja.md
+README_th.md
+sotsuken_topics_01_02.pptx
+sotsuken_topics_01_02_v2.pptx
+sotsuken_topics_01_02_v3.pptx

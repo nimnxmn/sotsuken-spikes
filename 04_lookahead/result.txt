@@ -1,0 +1,7 @@
+strategy                            Sharpe*        naive test       strict test
+MA cross (correct)                     0.07              pass              pass
+MA cross, no shift (bug)               1.01              pass          LEAK 55%
+z-score, full-sample mean (bug)        0.27          LEAK 85%          LEAK 85%
+centered smoother (bug)                3.87          LEAK 80%          LEAK 80%
+z-score, expanding (correct)          -0.07              pass              pass
+* annualized Sharpe averaged over 10 pure random walks (true value is 0)

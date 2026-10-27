@@ -1,0 +1,19 @@
+rule baseline vs reference: accuracy 31% on 75 sentences
+
+reference label counts: {'OTHER': 4, 'DEFINITION': 19, 'DATED_FACT': 37, 'CONDITIONAL_RISK': 10, 'FORECAST_OPINION': 5}
+rule label counts:      {'FORECAST_OPINION': 18, 'OTHER': 41, 'CONDITIONAL_RISK': 3, 'DATED_FACT': 11, 'DEFINITION': 2} 
+
+confusion (reference -> rule): count
+  DATED_FACT        -> OTHER             23
+  DEFINITION        -> OTHER             12
+  DEFINITION        -> FORECAST_OPINION  6
+  CONDITIONAL_RISK  -> FORECAST_OPINION  4
+  CONDITIONAL_RISK  -> OTHER             3
+  DATED_FACT        -> FORECAST_OPINION  2
+  OTHER             -> FORECAST_OPINION  1
+  DATED_FACT        -> DEFINITION        1
+
+mixed-claim sentences: 8 (11%)
+causal-attribution facts (fact + management explanation): 13
+'will' used for scheduled/required facts, not opinion: 5 -> rule called 5 of them FORECAST_OPINION
+sentence-splitting errors spotted: 3
